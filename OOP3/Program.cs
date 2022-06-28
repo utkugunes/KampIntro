@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+
 using OOP3;
 using System.Collections.Generic;
 
@@ -17,4 +18,9 @@ BasvuruManager basvuruManager = new BasvuruManager();
 List<IKrediManager> krediler = new List<IKrediManager>() {ihtiyacKrediManager,tasitKrediManager,konutKrediManager };
 
 basvuruManager.KrediOnBilgilendirmeYap(krediler);
+
+
+
+
+
 
