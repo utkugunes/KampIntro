@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace OOP3
 {
-
-    interface IKrediManager
-
+    class SmsLoggerService : ILoggerService
     {
-        void Hesapla();
-        void BiseyYap();
-
-
-        
+        public void Log()
+        {
+            Console.WriteLine("Sms gonderildi");
+        }
     }
 }

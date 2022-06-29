@@ -8,10 +8,14 @@ namespace OOP3
 {
     class BasvuruManager
     {
-        public void BasvuruYap(IKrediManager krediManager)
+        public void BasvuruYap(IKrediManager krediManager, List<ILoggerService> loggerServices)
         {
             krediManager.Hesapla();
-
+            
+            foreach (ILoggerService loggerService in loggerServices)
+            {
+                loggerService.Log();
+            }
 
         }
 
